@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { HEROES } from '../app/mock-heroes';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-tutorial';
+  title = 'Tour of Heros';
+  heroes = HEROES;
 }
